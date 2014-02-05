@@ -14,6 +14,8 @@
  
  $link = $bkgImg['url'];
  $style = "background:url('" . $link . "') no-repeat 100%;";
+ 
+ $title = get_the_title();
 ?>
 <style type="text/css">
     .social-content {
@@ -119,6 +121,11 @@
 		<?php
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
 		?>
+		<?php if($title == 'The Management') { ?>
+    		<a href="/management">
+    	        <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Right-Arrow.png" />
+    	   </a>
+    	<?php } ?>
 		</div>
 		
 		<div class="content-footer">
