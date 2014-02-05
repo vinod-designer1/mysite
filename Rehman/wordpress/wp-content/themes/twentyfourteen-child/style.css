@@ -1,0 +1,244 @@
+/*
+ Theme Name:   Twenty Fourteen Child
+ Description:  Twenty Fourteen Child Theme
+ Author:       Vinod
+ Author Email: vinod.designer1@gmail.com 
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+ Vinod
+*/
+
+@import url("../twentyfourteen/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+.masthead-fixed .site-main {
+    margin-top:0px;
+}
+
+.post {
+    color:white;
+}
+
+.post .entry-meta{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.post .entry-header{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.post .entry-content{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.category-courses {
+    position: relative;
+    left: 18%;
+}
+
+.nav-links{
+    border:0px;
+}
+
+.nav-links > a{
+    border:0px;
+    text-decoration:none;
+}
+
+.nav-links > a > .meta-nav {
+    font-size: 4em;
+    line-height: 0px;
+    font-family: serif;
+}
+
+.pull-left {
+    float:left;
+}
+
+.pull-right {
+    float:right;
+}
+
+.secondary-navigation {
+    border:0px;
+    width:145%;
+}
+
+.secondary-navigation li {
+    border:0px;
+}
+
+.secondary-navigation a {
+padding: 10px 30px;
+font-family: Open Sans;
+font-size: 18px;
+font-weight: lighter;
+}
+
+a[title="apply"] {
+    color:red;
+}
+
+/* Support a widely-adopted but non-standard selector for text selection styles
+ * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
+ */
+::selection {
+	background: #A3A3A3;
+	color: #fff;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #A3A3A3;
+	color: #fff;
+	text-shadow: none;
+}
+
+
+#primary {
+    padding:0px;
+}
+
+#content {
+    padding:0px;
+    margin-bottom:0px;
+}
+
+.article-main {
+    height:500px;
+}
+
+.post {
+    padding-top:20px;
+}
+
+.fraction-slider {
+    height:100%;
+    position:relative;
+    left:-248px;
+    width:100%;
+}
+
+.fraction-slider > div {
+    display:none;
+}
+
+
+#playpauses{
+    background-repeat:no-repeat;
+    height: 44px;
+    width: 94px;
+    left: 45%;
+    bottom:20%;
+    position: relative;
+}
+
+#playpauses.play {
+    background:url('http://www.90secondwebsitebuilder.com/images/1fe0f_play_button.png');
+    background-size:100%;
+}
+
+#playpauses.pause {
+    background:url('http://www.vantagepoint3.org/resources/wp/wp-content/uploads/2012/11/pause-button1.png');
+    background-size:100%;
+}
+
+
+.post {
+    position:absolute;
+    width:350px;
+}
+
+#secondary {
+    z-index:100;
+}
+
+#sidemenu {
+    width: 200px;
+    padding: 0 24px;
+    height:100%;
+    background-color:black;
+    float: left;
+}
+
+#main {
+    height:581px;
+}
+
+.content-post{
+    position: relative;
+    top:0px;
+    height: 100%;
+    left:200px;
+    width:1080px;
+}
+
+#content {
+    height:100%;
+}
+
+.category_slider {
+    height:100%;
+}
+
+#page {
+    width:1280px;
+}
+
+
+
+/**
+ * 11.0 Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+@media screen and (max-width: 960px) {
+    #page {
+        width:960px;
+    }
+    
+    .content-post{
+        position: relative;
+        top:0px;
+        height: 100%;
+        left:200px;
+        width:760px;
+    }
+    
+    #main {
+        height:760px;
+    }
+}
+
+
+
+
