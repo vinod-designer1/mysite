@@ -116,13 +116,10 @@ body {
 }
 
 a {
-	color: #24890d;
 	text-decoration: none;
 }
 
-a:focus {
-	outline: thin dotted;
-}
+
 
 a:hover,
 a:active {
@@ -131,7 +128,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: #41a62a;
+	color: white;
 }
 
 h1,
@@ -1078,13 +1075,6 @@ a.post-thumbnail:hover {
 	text-transform: uppercase;
 }
 
-.entry-title a {
-	color: #2b2b2b;
-}
-
-.entry-title a:hover {
-	color: #41a62a;
-}
 
 .site-content .entry-header {
 	background-color: #fff;
@@ -1114,9 +1104,7 @@ a.post-thumbnail:hover {
 	color: #767676;
 }
 
-.entry-meta a:hover {
-	color: #41a62a;
-}
+
 
 .sticky .entry-date {
 	display: none;

@@ -18,10 +18,20 @@
     margin-top:0px;
 }
 
+p{
+    opacity:0.9;
+}
+
+h1,h2,h3,4{
+    opacity: 0.9;
+}
+
 .post {
     color:white;
 }
-
+.social-content{
+    top:146px;
+}
 .post .entry-meta{
     background-color: rgba(0, 0, 0, 0.5);
     /* For IE 5.5 - 7*/
@@ -44,6 +54,7 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    height: 568px;  
 }
 
 .category-courses {
@@ -77,6 +88,7 @@
 .secondary-navigation {
     border:0px;
     width:145%;
+    margin-top: 120px;
 }
 
 .secondary-navigation li {
@@ -85,9 +97,15 @@
 
 .secondary-navigation a {
 padding: 10px 30px;
-font-family: Open Sans;
-font-size: 18px;
+font-family: sans-serif;
+font-size: 19px;
 font-weight: lighter;
+ text-transform: none;
+ opacity: 0.9;
+}
+
+.secondary-navigation a:hover{
+    color: white;
 }
 
 a[title="apply"] {
@@ -128,9 +146,8 @@ a[title="apply"] {
 }
 
 .fraction-slider {
-    height:100%;
     position:relative;
-    left:-248px;
+    /*left:-248px;*/
     width:100%;
 }
 
@@ -161,7 +178,7 @@ a[title="apply"] {
 
 .post {
     position:absolute;
-    width:350px;
+    width:37%;
 }
 
 #secondary {
@@ -169,11 +186,13 @@ a[title="apply"] {
 }
 
 #sidemenu {
-    width: 200px;
+    width: 180px;
     padding: 0 24px;
-    height:100%;
-    background-color:black;
+    height:108%;
+    background-color:#1C1C1C;
     float: left;
+    position:absolute;
+    z-index:100;
 }
 
 #main {
@@ -185,7 +204,6 @@ a[title="apply"] {
     top:0px;
     height: 100%;
     left:200px;
-    width:1080px;
 }
 
 #content {
@@ -237,8 +255,26 @@ a[title="apply"] {
     #main {
         height:760px;
     }
+    
+    #sidemenu {
+        height:428px;
+    }
+}
+
+.entry-content a, .entry-summary a, .page-content a, .comment-content a{
+    color: #FFFFFF;
+    font-family: Baskerville Italics;
+    text-transform: none;
+    text-decoration: none;
 }
 
 
 
+.entry-content .description{
+    height: 383px;
+    overflow: auto;
+}
 
+.site-title{
+    margin: 22px;
+}

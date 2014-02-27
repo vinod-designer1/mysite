@@ -76,8 +76,8 @@
 </style>
 
 <div  class="slide" >
-<img src="<?=$link?>" width="100%" data-position="0,0" data-in="left" data-delay="0" data-out="right">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-position="50,710" data-in="left" data-delay="1" data-out="right" >
+<img src="<?=$link?>" width="100%" data-position="0,0" data-in="fade" data-delay="0" data-out="fade">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-position="50,710" data-in="fade" data-delay="500" data-out="fade" >
 	<?php twentyfourteen_post_thumbnail(); ?>
 	
 	

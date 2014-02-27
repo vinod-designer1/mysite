@@ -12,7 +12,7 @@
 <?php ?>
 <div id="sidemenu">
     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/home" rel="home">
-        <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Logo-Small-(sitemap).png" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Logo-Large.png" />
     </a></h1>
 	<?php
 		$description = get_bloginfo( 'description', 'display' );

@@ -109,4 +109,4 @@
 	}
    
     //get_sidebar( 'content' );
-    get_footer();
+    //get_footer();
