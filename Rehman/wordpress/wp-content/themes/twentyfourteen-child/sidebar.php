@@ -10,7 +10,11 @@
  // echo esc_html( $description );
 ?>
 <?php ?>
-<div id="sidemenu">
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+
+
+<div id="sidemenu" class="sidebar-pushed">
+    <a class="sidebar-trigger"></a>
     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/home" rel="home">
         <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Logo-Large.png" />
     </a></h1>
@@ -22,10 +26,61 @@
 	<?php endif; ?>
 
 	<?php  if ( has_nav_menu( 'secondary' ) ) : ?>
-	<nav role="navigation" class="navigation site-navigation secondary-navigation">
-		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
+	
+	<nav class="navigation site-navigation secondary-navigation" role="navigation" >
+	    <?php
+	       /*     $menu_name = 'secondary';
+	            
+	        if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+            	$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+            
+            	$menu_items = wp_get_nav_menu_items($menu->term_id);
+            
+            	$menu_list = '<ul class="sidebar-list" id="menu-' . $menu_name . '">';
+                
+                $i = 0;
+            	foreach ( (array) $menu_items as $key => $menu_item ) {
+            	    $title = $menu_item->title;
+            	    $url = $menu_item->url;
+            	    $class = '';
+            	    
+            	    if ($i == 0) {
+            	        $class = 'class="current"';
+            	    }
+            	    
+            	    $menu_list .= '<li ' .$class. '><a href="' . $url . '">' . $title . '</a></li>';
+            	    
+            	    $i++;
+            	}
+            	$menu_list .= '</ul>';
+            } else {
+            	$menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
+            }*/
+	    ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'secondary',) ); 
+            //echo $menu_list;
+		?>
 	</nav>
 	<?php endif; ?>
-
-	
 </div><!-- #secondary -->
+
+<script>
+    $('.sidebar-trigger').click(function(e){
+        e.preventDefault();
+        
+        if ($( "#sidemenu" ).hasClass('sidebar-pushed')) {
+            $( "#sidemenu" ).animate({
+            left: "-=182"
+            }, 1000, function() {
+                $('#sidemenu').removeClass('sidebar-pushed').addClass('sidebar-pulled');
+            });
+        } else {
+            $( "#sidemenu" ).animate({
+            left: "+=182"
+            }, 1000, function() {
+                $('#sidemenu').removeClass('sidebar-pulled').addClass('sidebar-pushed');
+            });
+        }
+         
+    })
+</script>

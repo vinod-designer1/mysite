@@ -15,16 +15,17 @@
 	
 	
 	get_header();
-	 get_sidebar();
+	get_sidebar();
 ?>
-
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/slider/jquery.fractionslider.js"></script>
 
 
+
+		
 <div id="" class="content-post">
 		<div id="content" class="" role="main">
 		    <div id="category_slider_1" class="category_slider slider">
+		       
 <?php
 	
 	wp_reset_query();
@@ -85,7 +86,7 @@
 			$slideNo++;
 		 endwhile;
 			?>
-			    
+			   
 			</div><!-- #category_slider-->
 		</div><!-- #content -->
 	</div><!-- #primary -->
@@ -103,10 +104,12 @@
     	})
     </script>
 
+
 <?php
 	} else {
 	    get_template_part( 'single-studentlife');
 	}
-   
-    //get_sidebar( 'content' );
     //get_footer();
+?>
+
+

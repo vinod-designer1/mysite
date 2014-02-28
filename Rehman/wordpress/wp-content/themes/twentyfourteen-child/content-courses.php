@@ -138,7 +138,7 @@
 
 <div  class="slide">
 <img src="<?=$link?>" width="100%" data-position="0,0" data-in="fade" data-delay="0" data-out="fade">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-position="50,80"  data-in="fade" data-delay="500" data-out="fade" >
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-position="50,280"  data-in="fade" data-delay="500" data-out="fade" >
 	<?php twentyfourteen_post_thumbnail(); ?>
 	
 	
@@ -184,7 +184,7 @@
                     	<a href="#">
                     	   <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Play-button.png"/>
                     	</a>
-                        <p> watch our students perform</p>
+                        <p class="watch-title"> watch our students perform</p>
                     </div>
                     <div class="social">
                     	<a href="#">

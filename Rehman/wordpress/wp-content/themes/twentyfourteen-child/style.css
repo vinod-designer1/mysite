@@ -19,7 +19,7 @@
 }
 
 p{
-    opacity:0.9;
+    opacity:0.8;
 }
 
 h1,h2,h3,4{
@@ -148,7 +148,7 @@ a[title="apply"] {
 .fraction-slider {
     position:relative;
     /*left:-248px;*/
-    width:100%;
+    height:100%;
 }
 
 .fraction-slider > div {
@@ -178,7 +178,7 @@ a[title="apply"] {
 
 .post {
     position:absolute;
-    width:37%;
+    width:30%;
 }
 
 #secondary {
@@ -193,6 +193,7 @@ a[title="apply"] {
     float: left;
     position:absolute;
     z-index:100;
+    opacity:0.8;
 }
 
 #main {
@@ -203,11 +204,10 @@ a[title="apply"] {
     position: relative;
     top:0px;
     height: 100%;
-    left:200px;
 }
 
 #content {
-    height:100%;
+    width:100%;
 }
 
 .category_slider {
@@ -215,7 +215,10 @@ a[title="apply"] {
 }
 
 #page {
-    width:1280px;
+    /*width:1280px;*/
+    width:100%;
+    height:667px;
+    position:relative;
 }
 
 
@@ -241,14 +244,16 @@ a[title="apply"] {
 
 @media screen and (max-width: 960px) {
     #page {
-        width:960px;
+       /* width:960px;*/
+       width:100%;
+       height:100%;
+       position:relative;
     }
     
     .content-post{
         position: relative;
         top:0px;
         height: 100%;
-        left:200px;
         width:760px;
     }
     
@@ -263,9 +268,11 @@ a[title="apply"] {
 
 .entry-content a, .entry-summary a, .page-content a, .comment-content a{
     color: #FFFFFF;
-    font-family: Baskerville Italics;
+    font-family: baskerville-italic;
     text-transform: none;
     text-decoration: none;
+    opacity:0.9;
+    font-size:46px;
 }
 
 
@@ -277,4 +284,52 @@ a[title="apply"] {
 
 .site-title{
     margin: 22px;
+}
+
+.video .watch-title {
+    font-size:13px;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot');
+  src: url('font/fontello.eot#iefix') format('embedded-opentype'),
+       url('font/fontello.woff') format('woff'),
+       url('font/fontello.ttf') format('truetype'),
+       url('font/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sidebar-trigger{
+    float:right;
+    cursor:pointer;
+    width:38px;
+    position:absolute;
+    right:0;
+    color:#515151;
+}
+
+.sidebar-trigger:before{
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+         
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    content:"\e803";
 }
