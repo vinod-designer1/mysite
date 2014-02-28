@@ -51,23 +51,23 @@
     }
     
     .entry-content .head .navigation{
-        bottom: 8vh;
+        bottom: 13vh;
         position: relative;
         margin: 0;
         padding: 0;
     }
     
     .nav-links .next {
-        width:40px;
         position: absolute;
-        right: 0;
-        top: 0px;
+        right: -10px;
+        top: 8px;
+        width: 40px;
     }
     
     .nav-links .prev {
         width:40px;
         position: absolute;
-        left: 0;
+        left: -30px;
         top:0px;
     }
     
@@ -151,7 +151,7 @@
 	</footer>
 </article><!-- #post-## -->
 
-    <div class="social-content" data-position="450,200" data-in="fade" data-delay="2" data-out="fade">
+    <div class="social-content" data-position="450,450" data-in="fade" data-delay="2" data-out="fade">
          <div class="video">
         	<a href="#">
         	   <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Play-button.png"/>

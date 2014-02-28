@@ -62,6 +62,9 @@
 		?>
 	</nav>
 	<?php endif; ?>
+	<div style="position:absolute;bottom:0px">
+	    <img src="<?php bloginfo('template_directory'); ?>/images/sprites/Middlesex-Logo-to-use.png" />
+	</div>
 </div><!-- #secondary -->
 
 <script>
