@@ -12,6 +12,15 @@
 
 @import url("../twentyfourteen/style.css");
 
+
+.navigation .nav-links .next{
+    top:-73px;
+}
+
+.navigation .nav-links .prev{
+    top:-73px;
+}
+
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 .masthead-fixed .site-main {
@@ -20,6 +29,7 @@
 
 p{
     opacity:0.8;
+    font-family: Lato, Sans-serif;
 }
 
 h1,h2,h3,4{
@@ -278,7 +288,7 @@ a[title="apply"] {
 
 
 .entry-content .description{
-    height: 383px;
+    height: 315px;
     overflow: auto;
 }
 
@@ -333,3 +343,4 @@ a[title="apply"] {
     margin-left: .2em;
     content:"\e803";
 }
+
