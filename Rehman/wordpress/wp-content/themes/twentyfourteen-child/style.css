@@ -29,7 +29,7 @@
 
 p{
     opacity:0.8;
-    font-family: Lato, Sans-serif;
+    font-family: Open Sans;
 }
 
 h1,h2,h3,4{
@@ -83,7 +83,7 @@ h1,h2,h3,4{
 
 .nav-links > a > .meta-nav {
     font-size: 4em;
-    line-height: 0px;
+    line-height: 50px;
     font-family: serif;
 }
 
@@ -196,8 +196,8 @@ a[title="apply"] {
 }
 
 #sidemenu {
-    width: 180px;
-    padding: 0 24px;
+    width: 188px;
+    padding: 0 20px;
     height:108%;
     background-color:#1C1C1C;
     float: left;
@@ -214,6 +214,7 @@ a[title="apply"] {
     position: relative;
     top:0px;
     height: 100%;
+    font-family:Open Sans;
 }
 
 #content {
@@ -290,6 +291,7 @@ a[title="apply"] {
 .entry-content .description{
     height: 315px;
     overflow: auto;
+    font-family:Open Sans;
 }
 
 .site-title{
@@ -344,3 +346,22 @@ a[title="apply"] {
     content:"\e803";
 }
 
+.faculty_post .navigation .nav-links .prev {
+    top:8px;
+}
+
+.faculty_post .navigation .nav-links .next {
+    top:16px;
+}
+
+.faculty_post .entry-content a, .entry-summary a, .page-content a, .comment-content a {
+    font-size:37px;
+}
+
+.faculty_post .entry-content {
+    height:650px;
+}
+
+.management_post .entry-content {
+    height:650px;
+}

@@ -8,6 +8,7 @@
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
+  
  
  $bkgImg = get_field('background_image');
  
@@ -43,7 +44,7 @@
     
     .entry-content {
         padding:20px;
-        height: 450px;
+        height: 650px;
     }
     
     .entry-content .head{
@@ -60,7 +61,7 @@
     .nav-links .next {
         position: absolute;
         right: -10px;
-        top: 8px;
+        top: 3px;
         width: 40px;
     }
     
@@ -68,11 +69,11 @@
         width:40px;
         position: absolute;
         left: -30px;
-        top:0px;
+        top:11px;
     }
     
     .entry-content .description {
-    
+        height: 580px;
     }
     
     .arrow-down{
@@ -80,14 +81,28 @@
         position: relative;
     }
     
+    .third {
+        bottom: 27px;
+        left: -9%;
+        position: relative;
+    }
+    
+    
     .third > span{
-        margin-left:80px;
+        margin-left:69px;
+        color:white;
+    }
+    
+    #page {
+        height: 789px;
+        position: relative;
+        width: 100%;
     }
 </style>
 
 <div  class="slide" >
 <img src="<?=$link?>" width="100%" data-position="0,0" data-in="fade" data-delay="0" data-out="fade">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-position="50,820" data-in="fade" data-delay="500" data-out="fade" >
+<article id="post-<?php the_ID(); ?>" <?php post_class('faculty_post'); ?> data-position="50,820" data-in="fade" data-delay="500" data-out="fade" >
 	<?php twentyfourteen_post_thumbnail(); ?>
 	
 	
@@ -137,7 +152,7 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 	
-	<footer class="entry-meta">
+	<footer class="">
 	    <?php
 	        if (in_array('home', $tags)) {
 	            twentyfourteen_post_course_nav();
@@ -151,7 +166,7 @@
 	</footer>
 </article><!-- #post-## -->
 
-    <div class="social-content" data-position="450,450" data-in="fade" data-delay="2" data-out="fade">
+    <div class="social-content" data-position="600,450" data-in="fade" data-delay="2" data-out="fade">
          <div class="video">
         	<a href="#">
         	   <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Play-button.png"/>

@@ -72,8 +72,9 @@
         top:0px;
     }
     
-    .entry-content .description {
-    
+    .entry-content .description p > a{
+         font-size: 16px;
+         font-family:Open Sans;
     }
 </style>
 
@@ -122,7 +123,7 @@
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
 		?>
 		<?php if($title == 'The Management') { ?>
-    		<a href="/management">
+    		<a href="/management" style="float:right;position:absolute;top:4em;right:20px;">
     	        <img src="<?php bloginfo('template_directory'); ?>/images/sprites/KMMC-Sprite_Right-Arrow.png" />
     	   </a>
     	<?php } ?>

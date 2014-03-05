@@ -38,12 +38,14 @@
     
     .entry-content > .right-content{
         float:right;
-        width:440px;
+        width:400px;
     }
     
     .entry-content > .right-content > .entry-description{
+        font-size: 14px;
         height: 270px;
-        font-size:10px;
+        left: 3em;
+        position: relative;
     }
     
     .entry-content > .left-content > .entry-description{

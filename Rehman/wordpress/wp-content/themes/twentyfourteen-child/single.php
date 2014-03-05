@@ -43,6 +43,9 @@
 	
 	$current_post_id = get_the_ID();
 	
+	if ($category_name !='Home' || $category_name != 'Management') {
+		    ##
+	}
 	
 	if ($category_name != 'Student Life') {
 	

@@ -36,7 +36,7 @@
     
     .entry-content {
         padding:20px;
-        height: 450px;
+        height: 640px;
     }
     
     .entry-content .head{
@@ -71,13 +71,19 @@
     }
     
     .entry-content .description {
+        height:370px;
+    }
     
+    #page {
+        height: 789px;
+        position: relative;
+        width: 100%;
     }
 </style>
 
 <div  class="slide" >
 <img src="<?=$link?>" width="100%" data-position="0,0" data-in="fade" data-delay="0" data-out="fade">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-position="50,820" data-in="fade" data-delay="500" data-out="fade" >
+<article id="post-<?php the_ID(); ?>" <?php post_class('management_post'); ?> data-position="50,820" data-in="fade" data-delay="500" data-out="fade" >
 	<?php twentyfourteen_post_thumbnail(); ?>
 	
 	
